@@ -1,0 +1,35 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repo Viewer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy6nx9WlT9U2n2N6ZyQ9eq2I6qshYfqc" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy6nx9WlT9U2n2N6ZyQ9eq2I6qshYfqc" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header class="bg-dark text-white p-3">
+        <h1>GitHub Repo Viewer</h1>
+    </header>
+    <main class="container mt-4">
+        <div class="loader" id="loader"></div>
+        <div class="mb-3">
+            <input type="text" class="form-control" id="searchInput" placeholder="Search repositories">
+            <button class="btn btn-primary mt-2" onclick="searchRepositories()">Search</button>
+        </div>
+        <div id="repositories"></div>
+        <nav id="pagination" class="mt-3"></nav>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-c2vfIA5/mh8MQqhlD/4aiQhrrpYquEizn4t0U/+iFIbAUdCic8z9/wiS8FOdL6qe" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy6nx9WlT9U2n2N6ZyQ9eq2I6qshYfqc" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
